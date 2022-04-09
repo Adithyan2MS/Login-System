@@ -1,0 +1,23 @@
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">Login System</h2>
+            <span class="spa">Login in for the existing user</span>
+            {{#if logout}}
+            <div class="alert alert-success text-center">{{logout}}</div>
+            {{/if}}
+        </div>
+        <form action="/login" method="post" class="pt-1">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="email" name="email">
+                <small class="form-text text-muted text-left">Register email address</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="password" name="password">
+            </div>
+            <div class="p-2">
+                <button class="btn btn-success rounded-pill" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
